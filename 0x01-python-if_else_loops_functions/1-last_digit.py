@@ -12,8 +12,8 @@ else:
 
 if end > 5:
     final = big
-elif end is 0:
+elif end is == 0:
     final = draw
-elif end < 6 and not 0:
+elif end < 6 and end != 0:
     final = small
 print("last digit of", number, "is", end, final)
