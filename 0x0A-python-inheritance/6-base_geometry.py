@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-"""Documentation for an empty class creation"""
+"""Documentation for BaseGeometry class"""
 
 
 class BaseGeometry:
 
-    """Takes no function"""
+    """Base Geometry class that is empty"""
 
     def area(self):
-        """that raises an Exception with the message area() is not implemented"""
+        """Area function for geometry"""
 
         raise Exception("area() is not implemented")
