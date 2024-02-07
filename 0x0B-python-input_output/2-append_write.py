@@ -1,16 +1,16 @@
 #!/usr/bin/python3
-""" Defines a function that writes a string to a text file """
+""" Defines a function that appends a string to the end of a text file """
 
 
-def write_file(filename="", text=""):
+def append_write(filename="", text=""):
     """
-        Writes a string to a text file (UTF8)
+        Writes a string by appending to the end of a text file (UTF8)
 
         Args:
             filename (str): The name of the file to write to
-            text (str): The string to write to the file
+            text (str): The string to append to the file
 
-        Return: (int) number of characters written to the file
+        Return: (int) number of characters appended to the file
     """
-    with open(filename, "a", encoding="utf-8") as outFile:
-        return outFile.write(text)
+    with open(filename, "a", encoding="utf-8") as output_file:
+        return output_file.write(text)
