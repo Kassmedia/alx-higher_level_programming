@@ -10,5 +10,5 @@ from sys import argv
 if __name__ == '__main__':
     URL = 'https://api.github.com/users/{}'.format(argv[1])
     req = requests.get(URL,
-                     authen=HTTPBasicAuth(argv[1], argv[2]))
+                     auth=HTTPBasicAuth(argv[1], argv[2]))
     print(req.json().get('id'))
